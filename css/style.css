@@ -112,8 +112,6 @@ li a {
     opacity: 0px;
 }
 
-
-
 /* Footer */
 
 .hover-element:hover {
@@ -125,13 +123,23 @@ li a {
     text-decoration: none;
 }
 
-.background {
-    background-color:#2F303A;
-    text-decoration: none;
-    
+.footer-content {
+    background-color: #2F303A;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    padding:20px;
+    p {
+       color: white;
+    }
+    div a {
+        color: white;
+        text-decoration: none;
+    }
 }
 
-.background p {
-    color: #FFFFFF;
+.footer-content div a:hover {
+    color: #2196F3;
     text-decoration: none;
 }
