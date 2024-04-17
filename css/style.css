@@ -112,6 +112,12 @@ li a {
     opacity: 0px;
 }
 
+.our-team {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+}
+
 /* Images */
 
 .hero-elements {
