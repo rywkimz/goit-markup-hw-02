@@ -128,15 +128,11 @@ li a {
     text-align: center;
 }
 
-.image-gallery {
-    display: flex;
-    text-decoration: none;
-}
-
 .image-gallery-items {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    border: 1px;
 }
 
 .item:last-child {
