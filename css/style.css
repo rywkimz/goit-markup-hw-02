@@ -112,6 +112,41 @@ li a {
     opacity: 0px;
 }
 
+/* Images */
+
+.hero-elements {
+    display: flex;
+    text-decoration: none;
+    gap: 50px;
+    justify-content: center;
+}
+
+.about-elements {
+    display: ruby-text;
+    gap: 26px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.image-gallery {
+    display: flex;
+    text-decoration: none;
+}
+
+.image-gallery-items {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.item:last-child {
+    margin-right: 0;
+}
+
+.text {
+    margin-top: 10px;
+}
+
 /* Footer */
 
 .hover-element:hover {
