@@ -149,9 +149,13 @@ body {
 
 .hero-elements {
     display: flex;
-    text-decoration: none;
     gap: 50px;
     justify-content: center;
+}
+
+.hero-elements .hover-element {
+    cursor: pointer;
+    /* Add any other styles you need for .hover-element */
 }
 
 .about-elements {
