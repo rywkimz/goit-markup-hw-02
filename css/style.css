@@ -1,16 +1,28 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #2196F3;
+    --text-color: #333;
+    --background-color: #ECECEC;
+    --footer-bg-color: #333;
+    --footer-text-color: #fff;
+    --font-family: 'Roboto', sans-serif;
+    --font-size-base: 14px;
+    --container-width: 1600px;
+    --gap: 20px;
+    --padding-top: 50px;
+}
+
 body {
-    font-family: 'Roboto';
-    font-size: 14px;
-    padding-top: 50px;
-    padding-left: calc((100% - 1600px) / 2);
-    /* Adjust padding to center the content */
-    padding-right: calc((100% - 1600px) / 2);
-    /* Adjust padding to center the content */
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    padding-top: var(--padding-top);
+    padding-left: calc((100% - var(--container-width)) / 2);
+    padding-right: calc((100% - var(--container-width)) / 2);
 }
 
 .logo {
     text-decoration: none;
-    color:black;
+    color: black;
     font-size: 26px;
     float: left;
     margin-top: 7px;
@@ -18,25 +30,23 @@ body {
 }
 
 .logo span {
-    color:#2196F3;
+    color: var(--secondary-color);
 }
 
 .hand-button {
-  border: none;
-  background: none;
-  padding: 0;
-  cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 .hand-icon {
     width: 50px;
     height: 50px;
     background-image: url('http://www.w3.org/2000/svg');
-    /* Replace 'hand-icon.jpg' with your image path */
     background-size: cover;
 }
 
-/* CSS Comments */
 /* Header Section */
 .header-container {
     display: flex;
@@ -44,7 +54,7 @@ body {
     align-items: center;
     padding: 10px 20px;
     border: 1px;
-    background-color: #ECECEC;
+    background-color: var(--background-color);
 }
 
 .top-nav ul {
@@ -59,12 +69,12 @@ body {
 
 .top-nav a {
     text-decoration: none;
-    color: #333;
+    color: var(--text-color);
     padding: 10px;
 }
 
 .top-nav a:hover {
-    color: #2196F3;
+    color: var(--secondary-color);
 }
 
 .right-nav a {
@@ -74,7 +84,7 @@ body {
 }
 
 .right-nav a:hover {
-    color: #2196F3;
+    color: var(--secondary-color);
 }
 
 .nav ul {
@@ -90,13 +100,12 @@ body {
 
 .nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--text-color);
 }
 
 /* Main */
-
 .main {
-    padding: 20px;
+    padding: var(--gap);
 }
 
 .section {
@@ -104,29 +113,26 @@ body {
     text-decoration: none;
     text-align: center;
     background-color: #2F303A;
-    width: 1600px;
+    width: var(--container-width);
     height: 600px;
     top: 80px;
     gap: 0px;
     opacity: 0px;
     margin: 0 auto;
-    /* Center the section horizontally */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Center the content vertically */
 }
 
 .button {
     color: #FFFFFF;
     text-decoration: none;
-    background-color: #2196F3;
+    background-color: var(--primary-color);
     width: 200px;
     height: 50px;
     border-radius: 4px;
     opacity: 0px;
     margin: 20px auto 0;
-    /* Center the button horizontally */
 }
 
 /* Styles for .team section */
@@ -136,31 +142,26 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-bottom: 20px;
-    /* Optional: Add some space below the section */
+    margin-bottom: var(--gap);
 }
 
 .team h2 {
-    margin-bottom: 20px;
-    /* Optional: Add some space below the heading */
+    margin-bottom: var(--gap);
 }
 
 /* Images */
-
 .hero-elements {
     display: flex;
-    gap: 50px;
+    gap: var(--gap);
     justify-content: center;
 }
 
 .hero-elements .hover-element {
     cursor: pointer;
-    /* Add any other styles you need for .hover-element */
 }
 
 .about-elements {
     display: flex;
-    /* or display: inline; depending on your layout */
     gap: 26px;
     font-size: 12px;
     text-align: center;
@@ -171,7 +172,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
-    gap: 20px;
+    gap: var(--gap);
     margin: auto;
     text-align: center;
 }
@@ -181,17 +182,15 @@ body {
     display: flex;
     justify-content: center;
     margin: auto;
-    gap: 20px;
+    gap: var(--gap);
     text-align: center;
     width: 1170px;
-    /* Adjust as needed */
-    /* Remove height, top, left, gap, and opacity properties */
 }
 
 .image-gallery-items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: var(--gap);
 }
 
 .item:last-child {
@@ -199,20 +198,19 @@ body {
 }
 
 .text {
-    margin-top: 10px;
+    margin-top: var(--gap);
 }
 
 /* Footer */
-
 .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    padding: var(--gap);
     text-align: center;
 }
 
 .hover-element:hover {
-    color: #2196F3;
+    color: var(--secondary-color);
 }
 
 .hover-element {
@@ -226,7 +224,7 @@ body {
     flex-direction: column;
     align-content: flex-start;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: var(--gap);
 }
 
 .footer-content p {
@@ -239,6 +237,6 @@ body {
 }
 
 .footer-content div a:hover {
-    color: #2196F3;
+    color: var(--secondary-color);
     text-decoration: none;
 }
